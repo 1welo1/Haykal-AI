@@ -1,0 +1,46 @@
+2026-08-20T09:05:04Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2026-08-20T09:05:04Z INF Requesting new quick Tunnel on trycloudflare.com...
+2026-08-20T09:05:10Z INF +--------------------------------------------------------------------------------------------+
+2026-08-20T09:05:10Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2026-08-20T09:05:10Z INF |  https://massage-some-richmond-cardiovascular.trycloudflare.com                            |
+2026-08-20T09:05:10Z INF +--------------------------------------------------------------------------------------------+
+2026-08-20T09:05:10Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp]
+2026-08-20T09:05:10Z INF Version 2026.6.0 (Checksum 03e322598e84d77406fa55b93f59e8e54636c5d8501d9dce36697fcf080ed8cc)
+2026-08-20T09:05:10Z INF GOOS: windows, GOVersion: go1.26.4, GoArch: amd64
+2026-08-20T09:05:10Z INF Settings: map[ha-connections:1 protocol:quic url:http://localhost:8000]
+2026-08-20T09:05:10Z INF cloudflared will not automatically update on Windows systems.
+2026-08-20T09:05:10Z INF Generated Connector ID: 1dd38871-6a3b-4ec2-adb7-19798d6f6744
+2026-08-20T09:05:11Z INF Initial protocol quic
+2026-08-20T09:05:11Z INF ICMP proxy will use 10.174.240.95 as source for IPv4
+2026-08-20T09:05:11Z INF ICMP proxy will use fe80::c902:6ca9:e50c:27c0 in zone Wi-Fi as source for IPv6
+2026-08-20T09:05:11Z INF cloudflared does not support loading the system root certificate pool on Windows. Please use --origin-ca-pool <PATH> to specify the path to the certificate pool
+2026-08-20T09:05:11Z INF ICMP proxy will use 10.174.240.95 as source for IPv4
+2026-08-20T09:05:11Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.233
+2026-08-20T09:05:11Z INF ICMP proxy will use fe80::c902:6ca9:e50c:27c0 in zone Wi-Fi as source for IPv6
+2026-08-20T09:05:11Z INF Starting metrics server on 127.0.0.1:20241/metrics
+2026-08-20T09:05:12Z INF +-------------------------------------------------------------------------------------+
+2026-08-20T09:05:12Z INF |                               CONNECTIVITY PRE-CHECKS                               |
+2026-08-20T09:05:12Z INF +-------------------------------------------------------------------------------------+
+2026-08-20T09:05:12Z INF |  COMPONENT         TARGET                     STATUS  DETAILS                       |
+2026-08-20T09:05:12Z INF |  DNS Resolution    region1.v2.argotunnel.com  PASS    DNS Resolved successfully     |
+2026-08-20T09:05:12Z INF |  DNS Resolution    region2.v2.argotunnel.com  PASS    DNS Resolved successfully     |
+2026-08-20T09:05:12Z INF |  UDP Connectivity  region1.v2.argotunnel.com  PASS    QUIC connection successful    |
+2026-08-20T09:05:12Z INF |  UDP Connectivity  region2.v2.argotunnel.com  PASS    QUIC connection successful    |
+2026-08-20T09:05:12Z INF |  TCP Connectivity  region1.v2.argotunnel.com  PASS    HTTP/2 connection successful  |
+2026-08-20T09:05:12Z INF |  TCP Connectivity  region2.v2.argotunnel.com  PASS    HTTP/2 connection successful  |
+2026-08-20T09:05:12Z INF |  Cloudflare API    api.cloudflare.com:443     PASS    API is reachable              |
+2026-08-20T09:05:12Z INF |                                                                                     |
+2026-08-20T09:05:12Z INF |  SUMMARY: Environment is healthy. cloudflared will use 'quic' as primary protocol.  |
+2026-08-20T09:05:12Z INF +-------------------------------------------------------------------------------------+
+2026-08-20T09:05:12Z INF precheck component="DNS Resolution" details="DNS Resolved successfully" run_id=164d0cde-95aa-4284-b97e-2dae4d38fade status=pass target=region1.v2.argotunnel.com
+2026-08-20T09:05:12Z INF precheck component="DNS Resolution" details="DNS Resolved successfully" run_id=164d0cde-95aa-4284-b97e-2dae4d38fade status=pass target=region2.v2.argotunnel.com
+2026-08-20T09:05:12Z INF precheck component="UDP Connectivity" details="QUIC connection successful" run_id=164d0cde-95aa-4284-b97e-2dae4d38fade status=pass target=region1.v2.argotunnel.com
+2026-08-20T09:05:12Z INF precheck component="UDP Connectivity" details="QUIC connection successful" run_id=164d0cde-95aa-4284-b97e-2dae4d38fade status=pass target=region2.v2.argotunnel.com
+2026-08-20T09:05:12Z INF precheck component="TCP Connectivity" details="HTTP/2 connection successful" run_id=164d0cde-95aa-4284-b97e-2dae4d38fade status=pass target=region1.v2.argotunnel.com
+2026-08-20T09:05:12Z INF precheck component="TCP Connectivity" details="HTTP/2 connection successful" run_id=164d0cde-95aa-4284-b97e-2dae4d38fade status=pass target=region2.v2.argotunnel.com
+2026-08-20T09:05:12Z INF precheck component="Cloudflare API" details="API is reachable" run_id=164d0cde-95aa-4284-b97e-2dae4d38fade status=pass target=api.cloudflare.com:443
+2026-08-20T09:05:12Z INF precheck complete hard_fail=false run_id=164d0cde-95aa-4284-b97e-2dae4d38fade suggested_protocol=quic
+2026-08-20T09:05:12Z INF Registered tunnel connection connIndex=0 connection=5ac4036b-541b-41ec-90e8-ca6cd19f0a72 event=0 ip=198.41.200.233 location=mrs06 protocol=quic
+2026-08-20T09:15:16Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-08-20T09:33:06Z ERR  error="stream 309 canceled by remote with error code 0" connIndex=0 event=1 ingressRule=0 originService=http://localhost:8000
+2026-08-20T09:33:06Z ERR Request failed error="stream 309 canceled by remote with error code 0" connIndex=0 dest=https://massage-some-richmond-cardiovascular.trycloudflare.com/api/chat-analytics/stream event=0 ip=198.41.200.233 type=http

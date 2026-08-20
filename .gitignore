@@ -1,0 +1,12 @@
+.env
+*.db
+*.db-shm
+*.db-wal
+chroma_data/
+__pycache__/
+*.pyc
+*.log
+logs/
+*.zip
+.pytest_cache/
+testsprite_tests/tmp/
